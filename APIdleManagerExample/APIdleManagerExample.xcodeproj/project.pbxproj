@@ -1,0 +1,425 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		33D8AE101A448C0E00BA6000 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 33D8AE0F1A448C0E00BA6000 /* main.m */; };
+		33D8AE131A448C0E00BA6000 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 33D8AE121A448C0E00BA6000 /* AppDelegate.m */; };
+		33D8AE1B1A448C0E00BA6000 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33D8AE1A1A448C0E00BA6000 /* Images.xcassets */; };
+		33D8AE1E1A448C0E00BA6000 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33D8AE1C1A448C0E00BA6000 /* LaunchScreen.xib */; };
+		33D8AE2A1A448C0E00BA6000 /* APIdleManagerExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 33D8AE291A448C0E00BA6000 /* APIdleManagerExampleTests.m */; };
+		33D8AE351A448C2E00BA6000 /* APIdleManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 33D8AE341A448C2E00BA6000 /* APIdleManager.m */; };
+		33D8AE391A448C3A00BA6000 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33D8AE371A448C3A00BA6000 /* MainViewController.m */; };
+		33D8AE3A1A448C3A00BA6000 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33D8AE381A448C3A00BA6000 /* MainViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		33D8AE241A448C0E00BA6000 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 33D8AE021A448C0E00BA6000 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 33D8AE091A448C0E00BA6000;
+			remoteInfo = APIdleManagerExample;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		33D8AE0A1A448C0E00BA6000 /* APIdleManagerExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = APIdleManagerExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		33D8AE0E1A448C0E00BA6000 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		33D8AE0F1A448C0E00BA6000 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		33D8AE111A448C0E00BA6000 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		33D8AE121A448C0E00BA6000 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		33D8AE1A1A448C0E00BA6000 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		33D8AE1D1A448C0E00BA6000 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		33D8AE231A448C0E00BA6000 /* APIdleManagerExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = APIdleManagerExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		33D8AE281A448C0E00BA6000 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		33D8AE291A448C0E00BA6000 /* APIdleManagerExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = APIdleManagerExampleTests.m; sourceTree = "<group>"; };
+		33D8AE331A448C2E00BA6000 /* APIdleManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIdleManager.h; sourceTree = "<group>"; };
+		33D8AE341A448C2E00BA6000 /* APIdleManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APIdleManager.m; sourceTree = "<group>"; };
+		33D8AE361A448C3A00BA6000 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		33D8AE371A448C3A00BA6000 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		33D8AE381A448C3A00BA6000 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		33D8AE071A448C0E00BA6000 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33D8AE201A448C0E00BA6000 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		33D8AE011A448C0E00BA6000 = {
+			isa = PBXGroup;
+			children = (
+				33D8AE0C1A448C0E00BA6000 /* APIdleManagerExample */,
+				33D8AE261A448C0E00BA6000 /* APIdleManagerExampleTests */,
+				33D8AE0B1A448C0E00BA6000 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		33D8AE0B1A448C0E00BA6000 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				33D8AE0A1A448C0E00BA6000 /* APIdleManagerExample.app */,
+				33D8AE231A448C0E00BA6000 /* APIdleManagerExampleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		33D8AE0C1A448C0E00BA6000 /* APIdleManagerExample */ = {
+			isa = PBXGroup;
+			children = (
+				33D8AE111A448C0E00BA6000 /* AppDelegate.h */,
+				33D8AE121A448C0E00BA6000 /* AppDelegate.m */,
+				33D8AE361A448C3A00BA6000 /* MainViewController.h */,
+				33D8AE371A448C3A00BA6000 /* MainViewController.m */,
+				33D8AE381A448C3A00BA6000 /* MainViewController.xib */,
+				33D8AE331A448C2E00BA6000 /* APIdleManager.h */,
+				33D8AE341A448C2E00BA6000 /* APIdleManager.m */,
+				33D8AE1A1A448C0E00BA6000 /* Images.xcassets */,
+				33D8AE1C1A448C0E00BA6000 /* LaunchScreen.xib */,
+				33D8AE0D1A448C0E00BA6000 /* Supporting Files */,
+			);
+			path = APIdleManagerExample;
+			sourceTree = "<group>";
+		};
+		33D8AE0D1A448C0E00BA6000 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				33D8AE0E1A448C0E00BA6000 /* Info.plist */,
+				33D8AE0F1A448C0E00BA6000 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		33D8AE261A448C0E00BA6000 /* APIdleManagerExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				33D8AE291A448C0E00BA6000 /* APIdleManagerExampleTests.m */,
+				33D8AE271A448C0E00BA6000 /* Supporting Files */,
+			);
+			path = APIdleManagerExampleTests;
+			sourceTree = "<group>";
+		};
+		33D8AE271A448C0E00BA6000 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				33D8AE281A448C0E00BA6000 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		33D8AE091A448C0E00BA6000 /* APIdleManagerExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 33D8AE2D1A448C0E00BA6000 /* Build configuration list for PBXNativeTarget "APIdleManagerExample" */;
+			buildPhases = (
+				33D8AE061A448C0E00BA6000 /* Sources */,
+				33D8AE071A448C0E00BA6000 /* Frameworks */,
+				33D8AE081A448C0E00BA6000 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = APIdleManagerExample;
+			productName = APIdleManagerExample;
+			productReference = 33D8AE0A1A448C0E00BA6000 /* APIdleManagerExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		33D8AE221A448C0E00BA6000 /* APIdleManagerExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 33D8AE301A448C0E00BA6000 /* Build configuration list for PBXNativeTarget "APIdleManagerExampleTests" */;
+			buildPhases = (
+				33D8AE1F1A448C0E00BA6000 /* Sources */,
+				33D8AE201A448C0E00BA6000 /* Frameworks */,
+				33D8AE211A448C0E00BA6000 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				33D8AE251A448C0E00BA6000 /* PBXTargetDependency */,
+			);
+			name = APIdleManagerExampleTests;
+			productName = APIdleManagerExampleTests;
+			productReference = 33D8AE231A448C0E00BA6000 /* APIdleManagerExampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		33D8AE021A448C0E00BA6000 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Mitchell Malleo";
+				TargetAttributes = {
+					33D8AE091A448C0E00BA6000 = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					33D8AE221A448C0E00BA6000 = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = 33D8AE091A448C0E00BA6000;
+					};
+				};
+			};
+			buildConfigurationList = 33D8AE051A448C0E00BA6000 /* Build configuration list for PBXProject "APIdleManagerExample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 33D8AE011A448C0E00BA6000;
+			productRefGroup = 33D8AE0B1A448C0E00BA6000 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				33D8AE091A448C0E00BA6000 /* APIdleManagerExample */,
+				33D8AE221A448C0E00BA6000 /* APIdleManagerExampleTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		33D8AE081A448C0E00BA6000 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33D8AE1E1A448C0E00BA6000 /* LaunchScreen.xib in Resources */,
+				33D8AE3A1A448C3A00BA6000 /* MainViewController.xib in Resources */,
+				33D8AE1B1A448C0E00BA6000 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33D8AE211A448C0E00BA6000 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		33D8AE061A448C0E00BA6000 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33D8AE131A448C0E00BA6000 /* AppDelegate.m in Sources */,
+				33D8AE101A448C0E00BA6000 /* main.m in Sources */,
+				33D8AE351A448C2E00BA6000 /* APIdleManager.m in Sources */,
+				33D8AE391A448C3A00BA6000 /* MainViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33D8AE1F1A448C0E00BA6000 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33D8AE2A1A448C0E00BA6000 /* APIdleManagerExampleTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		33D8AE251A448C0E00BA6000 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 33D8AE091A448C0E00BA6000 /* APIdleManagerExample */;
+			targetProxy = 33D8AE241A448C0E00BA6000 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		33D8AE1C1A448C0E00BA6000 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				33D8AE1D1A448C0E00BA6000 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		33D8AE2B1A448C0E00BA6000 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		33D8AE2C1A448C0E00BA6000 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		33D8AE2E1A448C0E00BA6000 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = APIdleManagerExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		33D8AE2F1A448C0E00BA6000 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = APIdleManagerExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		33D8AE311A448C0E00BA6000 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = APIdleManagerExampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/APIdleManagerExample.app/APIdleManagerExample";
+			};
+			name = Debug;
+		};
+		33D8AE321A448C0E00BA6000 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = APIdleManagerExampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/APIdleManagerExample.app/APIdleManagerExample";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		33D8AE051A448C0E00BA6000 /* Build configuration list for PBXProject "APIdleManagerExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33D8AE2B1A448C0E00BA6000 /* Debug */,
+				33D8AE2C1A448C0E00BA6000 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		33D8AE2D1A448C0E00BA6000 /* Build configuration list for PBXNativeTarget "APIdleManagerExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33D8AE2E1A448C0E00BA6000 /* Debug */,
+				33D8AE2F1A448C0E00BA6000 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		33D8AE301A448C0E00BA6000 /* Build configuration list for PBXNativeTarget "APIdleManagerExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33D8AE311A448C0E00BA6000 /* Debug */,
+				33D8AE321A448C0E00BA6000 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 33D8AE021A448C0E00BA6000 /* Project object */;
+}
