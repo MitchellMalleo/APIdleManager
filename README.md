@@ -11,7 +11,7 @@ A idle timeout class in iOS. Allows custom idle timeout functionality that handl
 
 ### Idle Timer Managing
 
-- To intercept any touches within a view controller and reset the timer, override the `-(UIResponder *)nextResponder` method (if you haven't already) and replace it with:
+- To intercept any touches within a view controller and refresh the timer, override the `-(UIResponder *)nextResponder` method (if you haven't already) and replace it with:
 
 		-(UIResponder *)nextResponder
 		{
@@ -23,7 +23,7 @@ A idle timeout class in iOS. Allows custom idle timeout functionality that handl
 		
 _NOTE: `-(UIResponder *)nextResponder` should be overriden in each view controller that needs to reset the idle timer_
 
-- `[[APIdleManager sharedInstance] didReceiveInput];` is also appropriate for any other time you would like to reset your idle timer.
+- `[[APIdleManager sharedInstance] didReceiveInput];` is also appropriate for any other time you would like to refresh your idle timer.
 
 - If your application goes into the background and the user re-opens the application, make sure that you call `[[RTLIdleManager sharedInstance] checkAndReset]` on open to check if the alloted idle time has passed. The best place to call this method is in the `- (void)applicationDidBecomeActive:(UIApplication *)application` in the App Delegate.
 
