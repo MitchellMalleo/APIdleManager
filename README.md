@@ -21,7 +21,7 @@ A idle timeout class in iOS. Allows custom idle timeout functionality that handl
     		return [super nextResponder];
 		}
 		
-_NOTE: `-(UIResponder *)nextResponder` should be overriden in each view controller that needs to reset the idle timer_
+_NOTE: `-(UIResponder *)nextResponder` should be overriden in each view controller that needs to refesh the idle timer_
 
 - `[[APIdleManager sharedInstance] didReceiveInput];` is also appropriate for any other time you would like to refresh your idle timer.
 
