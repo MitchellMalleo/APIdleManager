@@ -38,6 +38,7 @@ static APIdleManager *_sharedInstance = nil;
     if (self)
     {
         [self createTimer];
+        self.willCreateNewTimerOnTimeout = YES;
     }
     
     return self;
