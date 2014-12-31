@@ -7,7 +7,7 @@ A idle timeout class in iOS. Allows custom idle timeout functionality that handl
 1. Clone the repo and drag APIdleManager.h/.m into your project.
 2. Make sure to call `[APIdleManager sharedInstance].onTimeout = ^(void){ //Timeout implementation goes here };` to not only instaniate the idle manager and start your idle timer, but to implement any functionality that is necessary for when the application times out. Without any block implementation, the class will not function properly.
 3. Make sure that `kMaxIdleTimeSeconds` is set to how many seconds until you want the application to run its timeout functionality. Its located in the APIdleManager.h and its defaulted to 60.0 seconds.
-4. Now that your idle manager is allocated and ready to go, so now we're going to dig into how to manage the timer and making sure your app will still timeout in the background.
+4. Now that your idle manager is allocated and ready to go, now we're going to dig into how to manage the timer and making sure your app will still timeout in the background.
 
 ### Idle Timer Managing
 
