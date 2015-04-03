@@ -15,12 +15,12 @@ typedef void(^APCompleteBlock)(void);
 @property (copy, nonatomic) APCompleteBlock onTimeout;
 @property BOOL willCreateNewTimerOnTimeout;
 
-+ (APIdleManager *) sharedInstance;
++ (APIdleManager *)sharedInstance;
 
-- (void) didReceiveInput;
-- (void) checkAndReset;
+- (void)didReceiveInput;
+- (void)checkAndReset;
 
-//Should only be used for manually creating a new timer when willCreateNewTimerOnTimeout is set to NO
+//Should only be used for manually creating a new timer
 - (void) createTimer;
 
 @end

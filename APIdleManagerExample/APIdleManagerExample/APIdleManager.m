@@ -8,30 +8,21 @@
 
 @interface APIdleManager()
 
-@property (nonatomic, strong) NSTimer *idleTimer;
-@property (nonatomic, strong) NSDate *lastInteraction;
-@property (nonatomic, assign) BOOL didTimeout;
+@property (strong, nonatomic) NSTimer *idleTimer;
+@property (strong, nonatomic) NSDate *lastInteraction;
+@property (assign, nonatomic) BOOL didTimeout;
 
 @end
 
 static APIdleManager *_sharedInstance = nil;
 
+#pragma mark - APIdleManager
+
 @implementation APIdleManager
 
-+ (APIdleManager *) sharedInstance
-{
-    static dispatch_once_t p = 0;
-    
-    static id _sharedObject = nil;
-    
-    dispatch_once(&p, ^{
-        _sharedObject = [[self alloc] init];
-    });
-    
-    return _sharedObject;
-}
+#pragma mark - Lifecycle
 
-- (id) init
+- (id)init
 {
     self = [super init];
     
@@ -44,7 +35,22 @@ static APIdleManager *_sharedInstance = nil;
     return self;
 }
 
-- (void) createTimer
+#pragma mark - Public Methods
+
++ (APIdleManager *)sharedInstance
+{
+    static dispatch_once_t p = 0;
+    
+    static id _sharedObject = nil;
+    
+    dispatch_once(&p, ^{
+        _sharedObject = [[self alloc] init];
+    });
+    
+    return _sharedObject;
+}
+
+- (void)createTimer
 {
     self.lastInteraction = [NSDate date];
     
@@ -61,7 +67,7 @@ static APIdleManager *_sharedInstance = nil;
                                                      repeats:YES];
 }
 
-- (void) checkAndReset
+- (void)checkAndReset
 {
     if (![self checkDidTimeout])
     {
@@ -69,7 +75,14 @@ static APIdleManager *_sharedInstance = nil;
     }
 }
 
-- (BOOL) checkDidTimeout
+- (void)didReceiveInput
+{
+    self.lastInteraction = [NSDate date];
+}
+
+#pragma mark - Private Methods
+
+- (BOOL)checkDidTimeout
 {
     NSDate *currentDate = [NSDate date];
     NSTimeInterval interactionTime = [currentDate timeIntervalSinceDate: self.lastInteraction];
@@ -83,7 +96,7 @@ static APIdleManager *_sharedInstance = nil;
     return NO;
 }
 
-- (void) timedOut
+- (void)timedOut
 {
     if(self.onTimeout)
     {
@@ -97,11 +110,6 @@ static APIdleManager *_sharedInstance = nil;
             [self createTimer];
         }
     }
-}
-
-- (void) didReceiveInput
-{
-    self.lastInteraction = [NSDate date];
 }
 
 
