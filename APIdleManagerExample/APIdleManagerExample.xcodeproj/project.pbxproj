@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3399FB241AE7332E009EC58A /* APIdleManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3399FB231AE7332E009EC58A /* APIdleManager.m */; };
 		33D8AE101A448C0E00BA6000 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 33D8AE0F1A448C0E00BA6000 /* main.m */; };
 		33D8AE131A448C0E00BA6000 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 33D8AE121A448C0E00BA6000 /* AppDelegate.m */; };
 		33D8AE1B1A448C0E00BA6000 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33D8AE1A1A448C0E00BA6000 /* Images.xcassets */; };
 		33D8AE1E1A448C0E00BA6000 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33D8AE1C1A448C0E00BA6000 /* LaunchScreen.xib */; };
 		33D8AE2A1A448C0E00BA6000 /* APIdleManagerExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 33D8AE291A448C0E00BA6000 /* APIdleManagerExampleTests.m */; };
-		33D8AE351A448C2E00BA6000 /* APIdleManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 33D8AE341A448C2E00BA6000 /* APIdleManager.m */; };
 		33D8AE391A448C3A00BA6000 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33D8AE371A448C3A00BA6000 /* MainViewController.m */; };
 		33D8AE3A1A448C3A00BA6000 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33D8AE381A448C3A00BA6000 /* MainViewController.xib */; };
 /* End PBXBuildFile section */
@@ -28,6 +28,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3399FB221AE7332E009EC58A /* APIdleManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = APIdleManager.h; path = ../../Classes/APIdleManager.h; sourceTree = "<group>"; };
+		3399FB231AE7332E009EC58A /* APIdleManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = APIdleManager.m; path = ../../Classes/APIdleManager.m; sourceTree = "<group>"; };
 		33D8AE0A1A448C0E00BA6000 /* APIdleManagerExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = APIdleManagerExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		33D8AE0E1A448C0E00BA6000 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		33D8AE0F1A448C0E00BA6000 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -38,8 +40,6 @@
 		33D8AE231A448C0E00BA6000 /* APIdleManagerExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = APIdleManagerExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		33D8AE281A448C0E00BA6000 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		33D8AE291A448C0E00BA6000 /* APIdleManagerExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = APIdleManagerExampleTests.m; sourceTree = "<group>"; };
-		33D8AE331A448C2E00BA6000 /* APIdleManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIdleManager.h; sourceTree = "<group>"; };
-		33D8AE341A448C2E00BA6000 /* APIdleManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APIdleManager.m; sourceTree = "<group>"; };
 		33D8AE361A448C3A00BA6000 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		33D8AE371A448C3A00BA6000 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		33D8AE381A448C3A00BA6000 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
@@ -63,6 +63,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3399FB1D1AE732B7009EC58A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				33D8AE361A448C3A00BA6000 /* MainViewController.h */,
+				33D8AE371A448C3A00BA6000 /* MainViewController.m */,
+				33D8AE381A448C3A00BA6000 /* MainViewController.xib */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		3399FB1E1AE732C0009EC58A /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				3399FB221AE7332E009EC58A /* APIdleManager.h */,
+				3399FB231AE7332E009EC58A /* APIdleManager.m */,
+				33D8AE111A448C0E00BA6000 /* AppDelegate.h */,
+				33D8AE121A448C0E00BA6000 /* AppDelegate.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
 		33D8AE011A448C0E00BA6000 = {
 			isa = PBXGroup;
 			children = (
@@ -84,13 +105,8 @@
 		33D8AE0C1A448C0E00BA6000 /* APIdleManagerExample */ = {
 			isa = PBXGroup;
 			children = (
-				33D8AE111A448C0E00BA6000 /* AppDelegate.h */,
-				33D8AE121A448C0E00BA6000 /* AppDelegate.m */,
-				33D8AE361A448C3A00BA6000 /* MainViewController.h */,
-				33D8AE371A448C3A00BA6000 /* MainViewController.m */,
-				33D8AE381A448C3A00BA6000 /* MainViewController.xib */,
-				33D8AE331A448C2E00BA6000 /* APIdleManager.h */,
-				33D8AE341A448C2E00BA6000 /* APIdleManager.m */,
+				3399FB1D1AE732B7009EC58A /* Views */,
+				3399FB1E1AE732C0009EC58A /* Classes */,
 				33D8AE1A1A448C0E00BA6000 /* Images.xcassets */,
 				33D8AE1C1A448C0E00BA6000 /* LaunchScreen.xib */,
 				33D8AE0D1A448C0E00BA6000 /* Supporting Files */,
@@ -224,9 +240,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3399FB241AE7332E009EC58A /* APIdleManager.m in Sources */,
 				33D8AE131A448C0E00BA6000 /* AppDelegate.m in Sources */,
 				33D8AE101A448C0E00BA6000 /* main.m in Sources */,
-				33D8AE351A448C2E00BA6000 /* APIdleManager.m in Sources */,
 				33D8AE391A448C3A00BA6000 /* MainViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -410,6 +426,7 @@
 				33D8AE2F1A448C0E00BA6000 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		33D8AE301A448C0E00BA6000 /* Build configuration list for PBXNativeTarget "APIdleManagerExampleTests" */ = {
 			isa = XCConfigurationList;
@@ -418,6 +435,7 @@
 				33D8AE321A448C0E00BA6000 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
