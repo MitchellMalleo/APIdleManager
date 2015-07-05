@@ -6,7 +6,7 @@
 
 #import <Foundation/Foundation.h>
 
-#define kMaxIdleTimeSeconds 60.0
+#define kMaxIdleTimeSeconds 5.0
 
 typedef void(^APCompleteBlock)(void);
 
@@ -15,7 +15,7 @@ typedef void(^APCompleteBlock)(void);
 @property (copy, nonatomic) APCompleteBlock onTimeout;
 @property BOOL willCreateNewTimerOnTimeout;
 
-+ (APIdleManager *)sharedInstance;
++ (instancetype)sharedInstance;
 
 - (void)didReceiveInput;
 - (void)checkAndReset;

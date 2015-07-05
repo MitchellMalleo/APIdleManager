@@ -37,7 +37,7 @@ static APIdleManager *_sharedInstance = nil;
 
 #pragma mark - Public Methods
 
-+ (APIdleManager *)sharedInstance
++ (instancetype)sharedInstance
 {
     static dispatch_once_t p = 0;
     
