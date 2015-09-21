@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "ApIdleManager"
-  s.version          = "0.0.3"
+  s.version          = "0.0.4"
   s.summary          = "APIdleManager is a iOS custom class that allows developers to set-up a custom idle timeout without subclassing UIApplication"
   s.homepage         = "https://github.com/MitchellMalleo/APIdleManager"
   s.license          = 'MIT'

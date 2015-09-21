@@ -39,12 +39,12 @@ Use `[[APIdleManager sharedInstance] didReceiveInput];` to refresh your timer. T
 	}
 		
 
-If your application goes into the background and the user re-opens the application, use `[[RTLIdleManager sharedInstance] checkAndReset]` to check if the alloted idle time has passed. The best default method for this is in the App Delegate:
+If your application goes into the background and the user re-opens the application, use `[[APIdleManager sharedInstance] checkAndReset]` to check if the alloted idle time has passed. The best default method for this is in the App Delegate:
 
     
     - (void)applicationDidBecomeActive:(UIApplication *)application
     {
-    	[[RTLIdleManager sharedInstance] checkAndReset];
+    	[[APIdleManager sharedInstance] checkAndReset];
     }
     
 
