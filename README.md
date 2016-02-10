@@ -11,7 +11,7 @@ A idle timeout class in iOS. Allows custom idle timeout functionality that handl
 
 ## Installation
 
-1. APIdleManager can be installed via [Cocoapods](http://cocoapods.org/) by adding `pod 'ApIdleManager'` to your podfile, or you can manually add `APIdleManager.h` and `APIdleManager.m` into your project.
+1. APIdleManager can be installed via [CocoaPods](http://cocoapods.org/) by adding `pod 'ApIdleManager'` to your podfile, or you can manually add `APIdleManager.h` and `APIdleManager.m` into your project.
 2. Implement the `onTimeout` block to instaniate the idle manager, start your idle timer, and implement and functionality that is necessary for when the application times out. Without any block implementation, the class will not function properly.
 
     ```
